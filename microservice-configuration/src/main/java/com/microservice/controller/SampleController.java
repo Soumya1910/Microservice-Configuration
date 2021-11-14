@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("")
 public class SampleController {
 	
-	@Value("${user.greetingMessage}")
+	@Value("${user.greetingMessage: rivu}") // define default value
 	private String greetingMessage;
 	
 	@GetMapping("/")
